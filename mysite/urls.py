@@ -21,5 +21,5 @@ urlpatterns = [
     #default URL
     url(r'', include('blog.urls')),
     url(r'^admin/', admin.site.urls),
-    url(r'', include('code_games.urls')),
+    url(r'^games/', include('code_games.urls')),
 ]

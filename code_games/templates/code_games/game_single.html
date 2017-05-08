@@ -1,9 +1,10 @@
 {% extends 'code_games/base.html' %}
 
 {% block content %}
-  <div class="game">
+  <div class="game-title">
       {{games.title|linebreaks}}
-      <iframe '{{ games.embed }}'></iframe>
-
+  </div>
+  <div class="game">
+      {{games.embed|safe}}
   </div>
 {% endblock %}

@@ -1,18 +1,16 @@
 {% extends 'code_games/base.html' %}
-
 {% block content %}
     {% for game in games %}
         <div class="post">
             {% if game.image != 'Null' %}
-            <a href="{% url 'post_detail' pk=post.pk %}">
-                <img src="/static/css/images/{{post.image}}" style="width:640px;height:228px;">
+            <a href="{% url 'game_single' pk=game.pk %}">
+                <img src="/static/css/images/{{game.image}}" style="width:640px;height:228px;">
             </a>
             {% endif %}
             <div class="date">
                 {{ game.published_date }}
             </div>
-            <h1><a href="{% url 'game_single' pk=post.pk %}">{{ game.title }}</a></h1>
-            <!--<p>{{ post.text|linebreaksbr }}</p>-->
+            <h1><a href="{% url 'game_single' pk=game.pk %}">{{ game.title }}</a></h1>
             <hr>
         </div>
     {% endfor %}
