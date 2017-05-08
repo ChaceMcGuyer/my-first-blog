@@ -1,7 +1,9 @@
 .page-header {
-    background-color: #3b3f44;
+    background-color: #33455b;
+    background-image: url('images/header.jpg');
     margin-top: 0;
     padding: 20px 20px 20px 40px;
+    height: 300px
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
@@ -9,6 +11,11 @@
     font-size: 36pt;
     text-decoration: none;
 }
+.page-header li a, .page-header li a:visited, .page-header li a:active {
+    color: #ffffff;
+    font-size: 16pt;
+}
+
 
 .content {
     margin-left: 40px;
