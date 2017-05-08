@@ -17,8 +17,9 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-    #leaveing the r'' blank between the parenthesis makes it the
+    #leaving the r'' blank between the parenthesis makes it the
     #default URL
     url(r'', include('blog.urls')),
     url(r'^admin/', admin.site.urls),
+    url(r'', include('code_games.urls')),
 ]

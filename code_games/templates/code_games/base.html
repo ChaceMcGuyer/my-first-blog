@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Chace's Blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body class="main-body">
+      <body>
+      <div class="page-header">
+          {% if request.user.is_superuser%}
+              <a href="{% url 'game_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+          {% endif %}
+          <h1><a href="/">Chace's Blog</a></h1>
+          <ul>
+            <li><a href='https://www.instagram.com/chacemason/'>Instagram: @chacemason</a></li>
+            <li><a href='https://www.linkedin.com/in/chacemcguyer/'>LinkedIn: Chace McGuyer</a></li>
+            <li><a href='mailto:mcguyerchace@gmail.com'>Email: mcguyerchace@gmail.com</a></li>
+          </ul>
+      </div>
+      <div class="content container">
+          <div class="row">
+              <div class="col-md-8">
+              {% block content %}
+              {% endblock %}
+              </div>
+          </div>
+      </div>
+</body>
+    </body>
+</html>
