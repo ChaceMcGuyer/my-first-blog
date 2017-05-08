@@ -17,11 +17,13 @@
 }
 .page-header li a, .page-header li a:visited, .page-header li a:active {
     color: #ffffff;
+    width: 300px
     font-size: 16pt;
 }
 
 
 .content {
+    background-color: #ffffff;
     margin-left: 40px;
 }
 
