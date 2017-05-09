@@ -30,11 +30,23 @@
     margin-left: 40px;
 }
 
-h1, h2, h3, h4 {
+h2, h3, h4 {
   font-family: 'Anton', sans-serif;
 }
 p {
   font-family: 'Roboto', sans-serif;
+}
+
+.TechTalk {
+  font-family: 'Anton', sans-serif;
+}
+
+.too {
+  font-family: 'Lobster', cursive;
+}
+
+.game-title {
+  font-family: 'Anton', sans-serif;
 }
 
 .date {

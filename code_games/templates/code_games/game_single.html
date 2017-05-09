@@ -1,16 +1,15 @@
 {% extends 'code_games/base.html' %}
 
 {% block content %}
-  <center>
+
     <div class="game-title">
-      {{games.title|linebreaks}}
+      <center><h2>{{games.title|linebreaks}}</h2></center>
     </div>
-  </center>
-  </center>
+
     <div class="game">
-      {{games.embed|safe}}
+      <center>{{games.embed|safe}}</center>
     </div>
-  </center>
+
 </br>
 </br>
 </br>
