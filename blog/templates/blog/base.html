@@ -9,6 +9,10 @@
     </head>
     <body class="main-body">
       <body>
+      <div class="topnav" id="myTopnav">
+        <a href="http://chacemcguyer.pythonanywhere.com">Home</a>
+        <a href="http://chacemcguyer.pythonanywhere.com/games/">Games</a>
+      </div>
       <div class="page-header">
           {% if request.user.is_superuser%}
               <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
