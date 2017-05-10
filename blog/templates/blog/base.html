@@ -1,7 +1,11 @@
 {% load staticfiles %}
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <title>TechTalktoo Home</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href="https://fonts.googleapis.com/css?family=Anton|Roboto" rel="stylesheet">
@@ -9,30 +13,55 @@
         <link rel="stylesheet" href="{% static 'css/code_games.css' %}">
     </head>
     <body class="main-body">
-      <body>
       <div class="topnav" id="myTopnav">
-        <a href="http://chacemcguyer.pythonanywhere.com">Home</a>
-        <a href="http://chacemcguyer.pythonanywhere.com/games/">Games</a>
+        <a href="/">Home</a>
+        <a href="/games/">Games</a>
       </div>
       <div class="page-header">
           {% if request.user.is_superuser%}
               <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
           {% endif %}
           <h1><a href="/"><span class="TechTalk">TechTalk</span><span class='too'>too</span></a></h1>
-          <ul>
-            <li><a href='https://www.instagram.com/chacemason/'>Instagram: @chacemason</a></li>
-            <li><a href='https://www.linkedin.com/in/chacemcguyer/'>LinkedIn: Chace McGuyer</a></li>
-            <li><a href='mailto:mcguyerchace@gmail.com'>Email: mcguyerchace@gmail.com</a></li>
-          </ul>
+          <p class="slogan">A place to talk about lots of things, but also Tech too</p>
       </div>
-      <div class="content container">
+
+      <div class="container-fluid">
           <div class="row">
-              <div class="col-md-8">
-              {% block content %}
-              {% endblock %}
-              </div>
+              <center>
+                <div id="addspot" class="col-sm-2">
+                  <p>ads go here</p>
+                </div>
+                <div class="col-sm-8">
+                  {% block content %}
+                  {% endblock %}
+                </div>
+              </center>
+              <div class="col-sm-2 blog-sidebar">
+                <div class="sidebar-module sidebar-module-inset">
+                  <h4>About</h4>
+                  <p>Here at TechTalk<em>too</em> we have a passion for tech, but we also have a passion for lots of other things. Thats why we're called TechTalk<em>too</em>.</p></br><p> Our goal is to provide the best source of tech information that someone could ask for. We plan on having an entire tutorial section dedicated to would-be programmers and techies.</p></br><p> Head on over to our games section to play fun and interactive games that teach programming skills. Swing by our blog area to see whats new in the world of tech! Whether your a tech enthusiast, a programmer or just want to pass some time, you have come to the right place!</p>
+                </div>
+                <div class="sidebar-module">
+                  <h4>Navigation</h4>
+                  <ol class="list-unstyled">
+                    <li><a href='/'>Home</a></li>
+                    <li><a href='/games/'>Games</a></li>
+                    <li><a href='/'>Tutorials</a><li>
+                </div>
+                <div class="sidebar-module">
+                  <h4>Elsewhere</h4>
+                  <ol class="list-unstyled">
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                  </ol>
+                </div>
+              </div><!-- /.blog-sidebar -->
           </div>
       </div>
-</body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
     </body>
 </html>

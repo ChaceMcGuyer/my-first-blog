@@ -11,14 +11,21 @@
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
-    font-size: 60pt;
+    color: #9199a5;
+    font-size: 72pt;
     text-decoration: none;
 }
 .page-header li a, .page-header li a:visited, .page-header li a:active {
     color: #ffffff;
     width: 300px
     font-size: 16pt;
+}
+
+.slogan {
+    color: #9199a5;
+    margin-left: 60px;
+    font-size: 16pt;
+
 }
 
 .game {
@@ -104,4 +111,11 @@ p {
 .topnav a.active {
     background-color: #4CAF50;
     color: white;
+}
+/* Side Navigation */
+.side-nav {
+    font-family: 'Roboto', sans-serif;
+    background-color: #4E4351;
+    color: #f2f2f2;
+
 }

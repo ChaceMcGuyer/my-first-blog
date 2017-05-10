@@ -11,8 +11,8 @@
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
-    font-size: 60pt;
+    color: #9199a5;
+    font-size: 72pt;
     text-decoration: none;
 }
 .page-header li a, .page-header li a:visited, .page-header li a:active {
@@ -21,6 +21,16 @@
     font-size: 16pt;
 }
 
+.slogan {
+    color: #9199a5;
+    margin-left: 60px;
+    font-size: 16pt;
+
+}
+
+.game {
+    margin-left: 400px;
+}
 
 .content {
     background-color: #ffffff;
@@ -77,7 +87,7 @@ p {
 .topnav {
     background-color: #4E4351;
     overflow: hidden;
-    width: 100%;
+    width: 100%
 }
 
 /* Style the links inside the navigation bar */
@@ -101,4 +111,12 @@ p {
 .topnav a.active {
     background-color: #4CAF50;
     color: white;
+}
+
+/* Side Navigation */
+.side-nav {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #ffffff
+
 }

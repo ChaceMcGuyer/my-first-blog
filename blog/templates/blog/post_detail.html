@@ -3,7 +3,9 @@
 {% block content %}
   <div class="post">
       {% if post.image != 'Null' %}
-      <img src="/static/css/images/{{post.image}}" style="width:640px;height:228px;">
+      <div class="media-top">
+        <img class="media-object" src="/static/css/images/{{post.image}}" style="width:640px;height:228px;">
+      </div>
       {% endif %}
       {% if post.published_date %}
         <div class="date">

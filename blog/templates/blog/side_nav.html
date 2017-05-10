@@ -1,0 +1,7 @@
+{% extends 'blog/base.html' %}
+
+{% block side-nav %}
+  {% for post in posts %}
+    <a href="{% url 'post_detail' pk=post.pk %}">
+  {% endfor %}
+{% endblock %}
