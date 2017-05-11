@@ -19,7 +19,9 @@ from django.contrib import admin
 urlpatterns = [
     #leaving the r'' blank between the parenthesis makes it the
     #default URL
-    url(r'', include('blog.urls')),
+    url(r'^$', include('landing.urls')),
+    url(r'^blog/', include('blog.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^games/', include('code_games.urls')),
+    url(r'^tutorials/', include('tutorials.urls')),
 ]

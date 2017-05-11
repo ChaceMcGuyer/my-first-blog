@@ -1,0 +1,112 @@
+
+.body {
+
+  margin:0;
+  padding:0;
+
+}
+.page-header {
+    background-image: url("images/mac-background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 20px 20px 20px 40px;
+    height: 600px
+
+}
+.blog {
+    background-image: url("images/blog.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 20px 20px 20px 40px;
+    height: 400px
+
+}
+
+.blog h1 a {
+    color: #FFFFFF;
+    font-size: 40pt;
+    font-family: 'Anton', sans-serif;
+    text-decoration: none;
+
+}
+
+.tutorial {
+    background-image: url("images/tutorial.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 20px 20px 20px 40px;
+    height: 400px
+
+}
+
+.tutorial h1 a {
+    color: #FFFFFF;
+    font-size: 40pt;
+    font-family: 'Anton', sans-serif;
+    text-decoration: none;
+
+}
+
+.games {
+    background-image: url("images/games.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 20px 20px 20px 40px;
+    height: 400px
+
+}
+
+.games h1 a {
+    color: #FFFFFF;
+    font-size: 40pt;
+    font-family: 'Anton', sans-serif;
+    text-decoration: none;
+
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 100pt;
+    text-decoration: none;
+    margin-top: 150px;
+}
+.page-header li a, .page-header li a:visited, .page-header li a:active {
+    color: #ffffff;
+    width: 300px
+    font-size: 16pt;
+}
+
+.slogan {
+    color: #ffffff;
+    font-size: 16pt;
+}
+
+.content {
+    background-color: #ffffff;
+    margin-left: 40px;
+}
+
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.TechTalk {
+  font-family: 'Anton', sans-serif;
+}
+
+.too {
+  font-family: 'Lobster', cursive;
+}

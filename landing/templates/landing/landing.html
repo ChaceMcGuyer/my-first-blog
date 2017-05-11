@@ -1,0 +1,45 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TechTalktoo Home</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/landing.css' %}">
+    </head>
+    <body class="main-body">
+      <div class="page-header">
+          <center>
+          <h1><a href="/"><span class="TechTalk">TechTalk</span><span class='too'>too</span></a></h1>
+          <p class="slogan">A place where we talk about lots of things, Tech too.</p>
+          </center>
+      </div>
+      <div class="blog">
+          <center>
+          <h1><a href="/blog/">Check out our Blog</a></h1>
+          <p class="slogan">See whats new with TechTalk<em>too</em> or read something interesting.</p>
+          </center>
+      </div>
+      <div class="tutorial">
+          <center>
+          <h1><a href="/tutorials/">Check out our Tutorials</a></h1>
+          <p class="slogan">Take some time to learn something new.</p>
+          </center>
+      </div>
+      <div class="games">
+          <center>
+          <h1><a href="/games/">Play Some Games</a></h1>
+          <p class="slogan">Have a break, while you also learn to code!</p>
+          </center>
+      </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

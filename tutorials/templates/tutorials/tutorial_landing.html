@@ -1,0 +1,19 @@
+{% extends 'tutorials/base.html' %}
+
+{% block content %}
+    {% for tutorial in tutorials %}
+          <div class="tutorial">
+            {% if tutorial.image != 'Null' %}
+            <a href="{% url 'tutorial_detail' pk=tutorial.pk %}">
+                <img src="/static/css/images/{{tutorial.image}}" style="width:640px;height:228px;">
+            </a>
+            {% endif %}
+            <div class="date">
+                {{ tutorial.published_date }}
+            </div>
+            <h1><a href="{% url 'tutorial_detail' pk=tutorial.pk %}">{{ tutorial.title }}</a></h1>
+            <!--<p>{{ post.text|linebreaksbr }}</p>-->
+            <hr>
+        </div>
+    {% endfor %}
+{% endblock %}

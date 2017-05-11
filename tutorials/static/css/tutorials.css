@@ -36,9 +36,15 @@
     margin-left: 40px;
 }
 
+h1 a{
+
+    color: #000000;
+
+}
 h2, h3, h4 {
   font-family: 'Anton', sans-serif;
 }
+
 p {
   font-family: 'Roboto', sans-serif;
 }

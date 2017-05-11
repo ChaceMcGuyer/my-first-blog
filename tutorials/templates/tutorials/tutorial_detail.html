@@ -1,0 +1,24 @@
+{% extends 'tutorials/base.html' %}
+
+{% block content %}
+  <div class="tutorial">
+      {% if tutorial.image != 'Null' %}
+      <div class="media-top">
+        <img class="media-object" src="/static/css/images/{{tutorial.image}}" style="width:640px;height:228px;">
+      </div>
+      {% endif %}
+      {% if tutorial.published_date %}
+        <div class="date">
+            {{ tutorial.published_date }}
+        </div>
+      {% endif %}
+      <h1>{{ tutorial.title }}</h1>
+      <p>{{ tutorial.text_one|linebreaksbr}}</p>
+      <p><pre>{{ tutorial.code_one|linebreaksbr }}</pre></p>
+      <p>{{ tutorial.text_two|linebreaksbr }}</p>
+      <p><pre>{{ tutorial.code_two|linebreaksbr }}</pre></p>
+      {% if request.user.is_superuser %}
+      <a class="btn btn-default" href="{% url 'tutorial_edit' pk=tutorial.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+      {% endif %}
+  </div>
+{% endblock %}
