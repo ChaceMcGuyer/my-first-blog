@@ -12,11 +12,22 @@
             {{ tutorial.published_date }}
         </div>
       {% endif %}
+
       <h1>{{ tutorial.title }}</h1>
       <p>{{ tutorial.text_one|linebreaksbr}}</p>
+      <!--Make it so typing 'Null' will make the section not show.-->
+      {% if tutorial.code_one != 'Null' %}
       <p><pre>{{ tutorial.code_one|linebreaksbr }}</pre></p>
+      {% endif %}
+
+      {% if tutorial.text_two != 'Null' %}
       <p>{{ tutorial.text_two|linebreaksbr }}</p>
+      {% endif %}
+
+      {% if tutorial.code_two != 'Null' %}
       <p><pre>{{ tutorial.code_two|linebreaksbr }}</pre></p>
+      {% endif %}
+
       {% if request.user.is_superuser %}
       <a class="btn btn-default" href="{% url 'tutorial_edit' pk=tutorial.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
       {% endif %}
